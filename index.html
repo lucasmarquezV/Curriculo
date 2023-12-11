@@ -28,6 +28,36 @@
         p {
             text-align: justify;
         }
+
+        hr {
+            border: none;
+            border-top: 5px dotted #ccc;
+            height: 5px;
+            margin: 10px 0;
+        }
+
+        .accordion-button {
+            color: #fff;
+            background-color: #343a40;
+            border: 1px solid #fff;
+        }
+
+        .accordion-button.collapsed {
+            background-color: #fff;
+            color: #343a40;
+        }
+        .accordion-button:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .accordion-button:not(.collapsed):after {
+            content: '\2212';
+        }
+
+        .accordion-button.collapsed:after {
+            content: '\002b';
+        }
     </style>
 </head>
 
@@ -340,15 +370,19 @@
                     <button class="accordion-button collapsed bg-dark text-light" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapses1" aria-expanded="false"
                         aria-controls="collapses1">
-                        Java - JavaEE, JSON, SQLITE <img src="img/java_icon.png" style="max-width: 32px; max-height: 32px; margin-left: 20px;">
+                        Java - JavaEE, JSON, SQLITE <img src="img/java_icon.png"
+                            style="max-width: 32px; max-height: 32px; margin-left: 20px;">
                     </button>
                 </h2>
                 <div id="collapses1" class="accordion-collapse collapse bg-dark text-light"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <div style="margin-top: 10px;">Eclipse <img src="img/eclipse_icon.png" style="max-width: 32px; max-height: 32px; margin-left: 20px;"></div>
-                        <div style="margin-top: 10px;">Apache NetBeans <img src="img/NetBeans_icon.png" style="max-width: 32px; max-height: 32px; margin-left: 20px;"></div>
-                        <div style="margin-top: 10px;">Android Studio <img src="img/AndroidStudio_icon.png" style="max-width: 32px; max-height: 32px; margin-left: 20px;"></div>
+                        <div style="margin-top: 10px;">Eclipse <img src="img/eclipse_icon.png"
+                                style="max-width: 32px; max-height: 32px; margin-left: 20px;"></div>
+                        <div style="margin-top: 10px;">Apache NetBeans <img src="img/NetBeans_icon.png"
+                                style="max-width: 32px; max-height: 32px; margin-left: 20px;"></div>
+                        <div style="margin-top: 10px;">Android Studio <img src="img/AndroidStudio_icon.png"
+                                style="max-width: 32px; max-height: 32px; margin-left: 20px;"></div>
                     </div>
                 </div>
             </div>
@@ -366,9 +400,12 @@
                 <div id="collapses2" class="accordion-collapse collapse bg-dark text-light"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <div style="margin-top: 10px;">MySql Workbench <img src="img/mysqli_icon.png" style="max-width: 32px; max-height: 32px; margin-left: 20px;"></div>
-                        <div style="margin-top: 10px;">PhpMyAdmin <img src="img/phpmyadmin_icon.png" style="max-width: 50px; max-height: 50px; margin-left: 20px;"></div>
-                        <div style="margin-top: 10px;">Oracle Apex <img src="img/OracleApex_icon.png" style="max-width: 32px; max-height: 32px; margin-left: 20px;"></div>
+                        <div style="margin-top: 10px;">MySql Workbench <img src="img/mysqli_icon.png"
+                                style="max-width: 32px; max-height: 32px; margin-left: 20px;"></div>
+                        <div style="margin-top: 10px;">PhpMyAdmin <img src="img/phpmyadmin_icon.png"
+                                style="max-width: 50px; max-height: 50px; margin-left: 20px;"></div>
+                        <div style="margin-top: 10px;">Oracle Apex <img src="img/OracleApex_icon.png"
+                                style="max-width: 32px; max-height: 32px; margin-left: 20px;"></div>
                     </div>
                 </div>
             </div>
@@ -380,14 +417,18 @@
                     <button class="accordion-button collapsed bg-dark text-light" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapses3" aria-expanded="false"
                         aria-controls="collapses3">
-                        FrameWorks <img src="img/Framework_icon.png" style="max-width: 32px; max-height: 32px; margin-left: 20px;">
+                        FrameWorks <img src="img/Framework_icon.png"
+                            style="max-width: 32px; max-height: 32px; margin-left: 20px;">
                     </button>
                 </h2>
                 <div id="collapses3" class="accordion-collapse collapse bg-dark text-light"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <div style="margin-top: 10px;">Bootstrap - HTML / CSS / JavaScript <img src="img/BootStrap_icon.jpg" style="max-width: 32px; max-height: 32px; margin-left: 20px;"></div>
-                        <div style="margin-top: 10px;">Vue - HTML / CSS / JavaScript <img src="img/Vue_icon.png" style="max-width: 32px; max-height: 32px; margin-left: 20px;"></div>
+                        <div style="margin-top: 10px;">Bootstrap - HTML / CSS / JavaScript <img
+                                src="img/BootStrap_icon.jpg"
+                                style="max-width: 32px; max-height: 32px; margin-left: 20px;"></div>
+                        <div style="margin-top: 10px;">Vue - HTML / CSS / JavaScript <img src="img/Vue_icon.png"
+                                style="max-width: 32px; max-height: 32px; margin-left: 20px;"></div>
                     </div>
                 </div>
             </div>
@@ -405,7 +446,8 @@
                 <div id="collapses4" class="accordion-collapse collapse bg-dark text-light"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <div style="margin-top: 10px;">Visual Studio Code <img src="img/vs_icon.png" style="max-width: 32px; max-height: 32px; margin-left: 20px;"></div>
+                        <div style="margin-top: 10px;">Visual Studio Code <img src="img/vs_icon.png"
+                                style="max-width: 32px; max-height: 32px; margin-left: 20px;"></div>
                     </div>
                 </div>
             </div>
@@ -417,13 +459,15 @@
                     <button class="accordion-button collapsed bg-dark text-light" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapses5" aria-expanded="false"
                         aria-controls="collapses5">
-                        Low-Code <img src="img/lowcode_icon.png" style="max-width: 32px; max-height: 32px; margin-left: 20px;">
+                        Low-Code <img src="img/lowcode_icon.png"
+                            style="max-width: 32px; max-height: 32px; margin-left: 20px;">
                     </button>
                 </h2>
                 <div id="collapses5" class="accordion-collapse collapse bg-dark text-light"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <div style="margin-top: 10px;">OutSystems Service Studio <img src="img/OutSystems_icon.jpg" style="max-width: 50px; max-height: 50px; margin-left: 20px;"></div>
+                        <div style="margin-top: 10px;">OutSystems Service Studio <img src="img/OutSystems_icon.jpg"
+                                style="max-width: 50px; max-height: 50px; margin-left: 20px;"></div>
                     </div>
                 </div>
             </div>
